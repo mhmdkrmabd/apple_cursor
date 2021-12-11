@@ -58,7 +58,7 @@ jobs:
         continue-on-error: false
 
       - name: Generating `macOS` Cursor Theme
-        run: make
+        run: make unix X_SIZES=24
         continue-on-error: false
 
       - name: Compressing `macOS` UNIX themes
