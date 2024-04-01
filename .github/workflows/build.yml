@@ -1,18 +1,7 @@
 name: build
 
 on:
-  push:
-    paths-ignore:
-      - "**.md"
-      - "**.bbcode"
-      - LICENSE
-    branches: [main, dev]
-  pull_request:
-    paths-ignore:
-      - "**.md"
-      - "**.bbcode"
-      - LICENSE
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
   build:
